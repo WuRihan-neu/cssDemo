@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 两个相邻的外边距都是正数时，折叠结果是它们两者之间较大的值。 */
+        /* 两个相邻的外边距都是负数时，折叠结果是两者绝对值的较大值。 */
+
+        /* 两个外边距一正一负时，折叠结果是两者的相加的和。 */
+        .container{
+           width: 500px;
+           height: 400px;
+           background-color: blueviolet;
+           margin-top: -50px;
+        }
+        .inner{
+           width: 100px;
+           height: 100px;
+           background-color: red;
+           margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+           
+        </div>
+    </div>
+</body>
+</html>

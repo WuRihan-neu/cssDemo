@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+           height: 100%;
+           overflow: hidden;
+        }
+        .container{
+            height: 100%;
+            position: relative;
+        }   
+        .left,
+        .right{
+            position: absolute;
+            top: 0;
+            min-height: 200px;
+            width: 200px;
+            background-color: crimson;
+        }  
+        .center{
+            background-color: blueviolet;
+            min-height: 400px;
+            margin: 0 200px;
+        }  
+        .left{
+            left: 0;
+        }
+        .right {
+            right: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
